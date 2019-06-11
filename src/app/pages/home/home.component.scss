@@ -1,0 +1,18 @@
+.container {
+  max-width: 900px;
+  padding: 10px 20px;
+  margin: auto;
+}
+
+input.search {
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid lightgrey;
+  padding: 2px 5px;
+  margin-right: 10px;
+}
+
+
+.forecast {
+  display: flex;
+}

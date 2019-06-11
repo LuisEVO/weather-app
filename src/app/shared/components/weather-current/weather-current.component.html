@@ -1,0 +1,12 @@
+<div class="current">
+  <div class="name">{{ location.name }}</div>
+  <div>{{ location.localtime | date:'EEEE HH:mm' }}</div>
+  <div>{{ current.condition.text }}</div>
+  <div class="temp" >
+    <img [src]="current.condition.icon">
+    <div>
+      {{ current.temp_c }}
+      <span>°C</span>
+    </div>
+  </div>
+</div>

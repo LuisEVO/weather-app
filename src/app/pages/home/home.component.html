@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    <input class="search" type="text" [(ngModel)]="q" >
+    <button (click)="search()">Search</button>
+
+    <div *ngIf="state">{{ state }}</div>
+
+    <ng-container *ngIf="weather">
+      <app-weather-current
+        [location]="weather.location"
+        [current]="weather.current">
+      </app-weather-current>
+      <div class="forecast">
+        <app-weather-forecast-day
+          *ngFor="let forecastDay of weather.forecast.forecastday"
+          [forecastDay]="forecastDay">
+        </app-weather-forecast-day>
+      </div>
+  </ng-container>
+  </div>
+</div>

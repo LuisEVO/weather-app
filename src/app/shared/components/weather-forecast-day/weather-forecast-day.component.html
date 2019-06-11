@@ -1,0 +1,14 @@
+<div class="forecast-day">
+  <div>{{ forecastDay.date | date: 'EEE' }}</div>
+  <div class="temp" >
+    <img [src]="forecastDay.day.condition.icon">
+    <div class="grades">
+      <div class="max">
+        {{ forecastDay.day.maxtemp_c }}<span>°</span>
+      </div>
+      <div class="min">
+        {{ forecastDay.day.mintemp_c }}<span>°</span>
+      </div>
+    </div>
+  </div>
+</div>

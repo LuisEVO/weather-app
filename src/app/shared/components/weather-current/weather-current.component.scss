@@ -1,0 +1,16 @@
+.current {
+  padding: 10px;
+  .name {
+    font-size: x-large;
+  }
+  .temp {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+}
